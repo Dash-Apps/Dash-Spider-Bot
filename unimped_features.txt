@@ -1,0 +1,11 @@
+list of unimplemented features and functions that id like to add to the spiderbot
+
+NTS means Note to self
+
+Function to send a fleet of spiders to scrape as much specified data as possible from a list of urls
+HOWTO 
+Step 1: make spiderbot instances as class objects for easy management of the fleet
+Step 2:have a list of already scraped urls to make sure no url gets scraped twice
+Step 3: if wanted, allow the spiderbots to run on threads for increased instance amount and efficency
+step 3: store data in attributes of each spiderbot class instance to either be logged or used in other functions(data will be stored in a dict)
+NTS: spiderbots may have types that determine what data they will scrape(i.e. A networking type spiderbot will only gather network data,A code scrape type bot will scrape html,js etc.)

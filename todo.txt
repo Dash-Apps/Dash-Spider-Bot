@@ -1,0 +1,2 @@
+1.make a brute force website finder to find valid urls
+2.make a network data scraper
