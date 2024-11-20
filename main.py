@@ -1,16 +1,17 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 import time
+import selenium
 
 def initialize_driver():
-    # Set up the WebDriver (ChromeDriver here, can be changed)
     options = webdriver.ChromeOptions()
-    options.headless = True  # Run in headless mode (no GUI)
-    service = Service('path/to/chromedriver')  # Replace with your chromedriver path
-    driver = webdriver.Chrome(service=service, options=options)
+    options.headless = True  # Optional
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     return driver
+
 
 def crawl_website(start_url, max_pages=10):
     driver = initialize_driver()
