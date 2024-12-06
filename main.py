@@ -49,5 +49,5 @@ def crawl_website(start_url, max_pages=10):
     print("Crawling completed.")
 
 # Run the spider bot
-start_url = 'https://example.com'  # Replace with your desired start URL
+start_url = 'https://www.youtube.com/'  # Replace with your desired start URL
 crawl_website(start_url)
